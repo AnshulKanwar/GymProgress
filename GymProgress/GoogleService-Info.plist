@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1035756278645-in53o9nerc405o66730udgt1vp8ctud8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1035756278645-in53o9nerc405o66730udgt1vp8ctud8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBjGF0HvdZihAib_BpS2ppMGdY8t8LGh-k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1035756278645</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.AnshulKanwar.GymProgress</string>
+	<key>PROJECT_ID</key>
+	<string>gym-progress-c6d41</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gym-progress-c6d41.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1035756278645:ios:f250d1a622bc76a546393c</string>
+</dict>
+</plist>
