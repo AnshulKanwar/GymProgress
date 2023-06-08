@@ -20,18 +20,18 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct GymProgressApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
-    @StateObject var authService = AuthService()
+    @StateObject var authManager = AuthManager()
     
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                if authService.isLoggedIn {
-                    ContentView()
+                if authManager.isLoggedIn {
+                    ExerciseListView()
                 } else {
                     LoginView()
                 }
             }
-            .environmentObject(authService)
+            .environmentObject(authManager)
         }
     }
 }

@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import FirebaseAuth
 
-class AuthService: ObservableObject {
+class AuthManager: ObservableObject {
     @AppStorage("uid") var uid: String = ""
     
     var isLoggedIn: Bool {

@@ -11,7 +11,7 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     
-    @EnvironmentObject var authService: AuthService
+    @EnvironmentObject var authManager: AuthManager
     
     var body: some View {
         VStack {
@@ -44,7 +44,7 @@ struct LoginView: View {
             .padding(.bottom, 50)
             
             Button(action: {
-                authService.login(email: email, password: password)
+                authManager.login(email: email, password: password)
             }) {
                 Text("Login")
                     .padding(10)

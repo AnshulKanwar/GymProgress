@@ -12,7 +12,7 @@ struct RegisterView: View {
     @State private var password = ""
     @State private var confirmPassword = ""
     
-    @EnvironmentObject var authService: AuthService
+    @EnvironmentObject var authManager: AuthManager
     
     var body: some View {
         VStack {
@@ -52,7 +52,7 @@ struct RegisterView: View {
             
             Button(action: {
                 if (password == confirmPassword) {
-                    authService.register(email: email, password: password)
+                    authManager.register(email: email, password: password)
                 }
             }) {
                 Text("Register")
