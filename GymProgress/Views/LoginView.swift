@@ -11,6 +11,8 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     
+    @EnvironmentObject var authService: AuthService
+    
     var body: some View {
         VStack {
             Spacer()
@@ -22,6 +24,7 @@ struct LoginView: View {
             
             VStack {
                 TextField("Email", text: $email)
+                    .textInputAutocapitalization(.never)
                     .padding()
                     .overlay(
                         RoundedRectangle(cornerRadius: 12)
@@ -40,7 +43,9 @@ struct LoginView: View {
             }
             .padding(.bottom, 50)
             
-            Button(action: {}) {
+            Button(action: {
+                authService.login(email: email, password: password)
+            }) {
                 Text("Login")
                     .padding(10)
                     .frame(maxWidth: .infinity)

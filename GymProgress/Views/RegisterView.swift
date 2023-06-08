@@ -9,8 +9,10 @@ import SwiftUI
 
 struct RegisterView: View {
     @State private var email = ""
-    @State private var password1 = ""
-    @State private var password2 = ""
+    @State private var password = ""
+    @State private var confirmPassword = ""
+    
+    @EnvironmentObject var authService: AuthService
     
     var body: some View {
         VStack {
@@ -23,18 +25,19 @@ struct RegisterView: View {
             
             VStack {
                 TextField("Email", text: $email)
+                    .textInputAutocapitalization(.never)
                     .padding()
                     .overlay(
                         RoundedRectangle(cornerRadius: 12)
                             .stroke(.foreground, lineWidth: 2)
                     )
-                SecureField("Password", text: $password1)
+                SecureField("Password", text: $password)
                     .padding()
                     .overlay(
                         RoundedRectangle(cornerRadius: 12)
                             .stroke(.foreground, lineWidth: 2)
                     )
-                SecureField("Confirm Password", text: $password2)
+                SecureField("Confirm Password", text: $confirmPassword)
                     .padding()
                     .overlay(
                         RoundedRectangle(cornerRadius: 12)
@@ -47,7 +50,11 @@ struct RegisterView: View {
             }
             .padding(.bottom, 50)
             
-            Button(action: {}) {
+            Button(action: {
+                if (password == confirmPassword) {
+                    authService.register(email: email, password: password)
+                }
+            }) {
                 Text("Register")
                     .padding(10)
                     .frame(maxWidth: .infinity)

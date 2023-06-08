@@ -8,16 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var authService: AuthService
+    
     var body: some View {
-        NavigationStack {
-            VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Hello, world!")
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world!")
+            
+            Button(action: {
+                authService.logout()
+            }) {
+                Text("Logout")
             }
-            .padding()
         }
+        .padding()
     }
 }
 

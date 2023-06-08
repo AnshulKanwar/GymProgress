@@ -16,6 +16,7 @@
 		F8D997D72A31D0A10031B309 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8D997D62A31D0A10031B309 /* GoogleService-Info.plist */; };
 		F8D997DB2A31D1B10031B309 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D997DA2A31D1B10031B309 /* RegisterView.swift */; };
 		F8D997DD2A31D5640031B309 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D997DC2A31D5640031B309 /* LoginView.swift */; };
+		F8D997E02A31D7450031B309 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D997DF2A31D7450031B309 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F8D997D62A31D0A10031B309 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F8D997DA2A31D1B10031B309 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F8D997DC2A31D5640031B309 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F8D997DF2A31D7450031B309 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,9 @@
 		F8D997C22A31CF7E0031B309 /* GymProgress */ = {
 			isa = PBXGroup;
 			children = (
-				F8D997D82A31D0B50031B309 /* Views */,
 				F8D997C32A31CF7E0031B309 /* GymProgressApp.swift */,
+				F8D997D82A31D0B50031B309 /* Views */,
+				F8D997DE2A31D7160031B309 /* ViewModels */,
 				F8D997D62A31D0A10031B309 /* GoogleService-Info.plist */,
 				F8D997C72A31CF7F0031B309 /* Assets.xcassets */,
 				F8D997C92A31CF7F0031B309 /* Preview Content */,
@@ -86,6 +89,14 @@
 				F8D997DC2A31D5640031B309 /* LoginView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F8D997DE2A31D7160031B309 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F8D997DF2A31D7450031B309 /* AuthService.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 			files = (
 				F8D997DB2A31D1B10031B309 /* RegisterView.swift in Sources */,
 				F8D997C62A31CF7E0031B309 /* ContentView.swift in Sources */,
+				F8D997E02A31D7450031B309 /* AuthService.swift in Sources */,
 				F8D997DD2A31D5640031B309 /* LoginView.swift in Sources */,
 				F8D997C42A31CF7E0031B309 /* GymProgressApp.swift in Sources */,
 			);
