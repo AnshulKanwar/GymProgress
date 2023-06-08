@@ -14,6 +14,8 @@
 		F8D997D32A31D0290031B309 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F8D997D22A31D0290031B309 /* FirebaseAuth */; };
 		F8D997D52A31D0290031B309 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F8D997D42A31D0290031B309 /* FirebaseFirestore */; };
 		F8D997D72A31D0A10031B309 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8D997D62A31D0A10031B309 /* GoogleService-Info.plist */; };
+		F8D997DB2A31D1B10031B309 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D997DA2A31D1B10031B309 /* RegisterView.swift */; };
+		F8D997DD2A31D5640031B309 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D997DC2A31D5640031B309 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		F8D997C72A31CF7F0031B309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8D997CA2A31CF7F0031B309 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8D997D62A31D0A10031B309 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F8D997DA2A31D1B10031B309 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F8D997DC2A31D5640031B309 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				F8D997C52A31CF7E0031B309 /* ContentView.swift */,
+				F8D997DA2A31D1B10031B309 /* RegisterView.swift */,
+				F8D997DC2A31D5640031B309 /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,7 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D997DB2A31D1B10031B309 /* RegisterView.swift in Sources */,
 				F8D997C62A31CF7E0031B309 /* ContentView.swift in Sources */,
+				F8D997DD2A31D5640031B309 /* LoginView.swift in Sources */,
 				F8D997C42A31CF7E0031B309 /* GymProgressApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
