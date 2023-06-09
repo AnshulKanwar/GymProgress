@@ -18,6 +18,8 @@
 		F88CF2482A3324BB000ABA2A /* NewSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88CF2472A3324BB000ABA2A /* NewSessionViewModel.swift */; };
 		F89E001C2A32041000FA4F5E /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E001B2A32041000FA4F5E /* FirestoreManager.swift */; };
 		F89E001F2A32FF2500FA4F5E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E001E2A32FF2500FA4F5E /* String+Extensions.swift */; };
+		F89E46B32A3335E400912358 /* exercises.png in Resources */ = {isa = PBXBuildFile; fileRef = F89E46B12A3335E400912358 /* exercises.png */; };
+		F89E46B42A3335E400912358 /* benchPress.png in Resources */ = {isa = PBXBuildFile; fileRef = F89E46B22A3335E400912358 /* benchPress.png */; };
 		F8D997C42A31CF7E0031B309 /* GymProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D997C32A31CF7E0031B309 /* GymProgressApp.swift */; };
 		F8D997C62A31CF7E0031B309 /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D997C52A31CF7E0031B309 /* ExerciseListView.swift */; };
 		F8D997C82A31CF7F0031B309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D997C72A31CF7F0031B309 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 		F88CF2472A3324BB000ABA2A /* NewSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionViewModel.swift; sourceTree = "<group>"; };
 		F89E001B2A32041000FA4F5E /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		F89E001E2A32FF2500FA4F5E /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F89E46B12A3335E400912358 /* exercises.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exercises.png; sourceTree = "<group>"; };
+		F89E46B22A3335E400912358 /* benchPress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = benchPress.png; sourceTree = "<group>"; };
 		F8D997C02A31CF7E0031B309 /* GymProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D997C32A31CF7E0031B309 /* GymProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymProgressApp.swift; sourceTree = "<group>"; };
 		F8D997C52A31CF7E0031B309 /* ExerciseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
@@ -88,13 +92,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F89E46B02A3335C700912358 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				F89E46B12A3335E400912358 /* exercises.png */,
+				F89E46B22A3335E400912358 /* benchPress.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		F8D997B72A31CF7E0031B309 = {
 			isa = PBXGroup;
 			children = (
-				F86505D22A31F68E00F71743 /* README.md */,
 				F8D997C22A31CF7E0031B309 /* GymProgress */,
 				F8D997C12A31CF7E0031B309 /* Products */,
 				F86505CF2A31F4F000F71743 /* Frameworks */,
+				F89E46B02A3335C700912358 /* Screenshots */,
+				F86505D22A31F68E00F71743 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,7 +235,9 @@
 				F8D997CB2A31CF7F0031B309 /* Preview Assets.xcassets in Resources */,
 				F8D997C82A31CF7F0031B309 /* Assets.xcassets in Resources */,
 				F86505D32A31F68E00F71743 /* README.md in Resources */,
+				F89E46B42A3335E400912358 /* benchPress.png in Resources */,
 				F8D997D72A31D0A10031B309 /* GoogleService-Info.plist in Resources */,
+				F89E46B32A3335E400912358 /* exercises.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

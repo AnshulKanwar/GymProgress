@@ -5,3 +5,4 @@ An iOS App to track you progress in gym
 
 - [ ] Error handling in Authentication
 - [ ] Icon
+- [ ] use Combine
