@@ -11,6 +11,9 @@
 		F86505CE2A31F1EB00F71743 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86505CD2A31F1EB00F71743 /* Exercise.swift */; };
 		F86505D12A31F4F000F71743 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F86505D02A31F4F000F71743 /* FirebaseFirestoreSwift */; };
 		F86505D32A31F68E00F71743 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F86505D22A31F68E00F71743 /* README.md */; };
+		F8702C332A33069900D33719 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8702C322A33069900D33719 /* ExerciseView.swift */; };
+		F8702C352A330BA500D33719 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8702C342A330BA500D33719 /* Session.swift */; };
+		F8702C372A330CC300D33719 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8702C362A330CC300D33719 /* ExerciseViewModel.swift */; };
 		F89E001C2A32041000FA4F5E /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E001B2A32041000FA4F5E /* FirestoreManager.swift */; };
 		F89E001F2A32FF2500FA4F5E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E001E2A32FF2500FA4F5E /* String+Extensions.swift */; };
 		F8D997C42A31CF7E0031B309 /* GymProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D997C32A31CF7E0031B309 /* GymProgressApp.swift */; };
@@ -28,6 +31,9 @@
 		F86505CA2A31EA8D00F71743 /* ExerciseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewModel.swift; sourceTree = "<group>"; };
 		F86505CD2A31F1EB00F71743 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		F86505D22A31F68E00F71743 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F8702C322A33069900D33719 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		F8702C342A330BA500D33719 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		F8702C362A330CC300D33719 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
 		F89E001B2A32041000FA4F5E /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		F89E001E2A32FF2500FA4F5E /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F8D997C02A31CF7E0031B309 /* GymProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				F86505CD2A31F1EB00F71743 /* Exercise.swift */,
+				F8702C342A330BA500D33719 /* Session.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,6 +131,7 @@
 				F8D997C52A31CF7E0031B309 /* ExerciseListView.swift */,
 				F8D997DA2A31D1B10031B309 /* RegisterView.swift */,
 				F8D997DC2A31D5640031B309 /* LoginView.swift */,
+				F8702C322A33069900D33719 /* ExerciseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +142,7 @@
 				F8D997DF2A31D7450031B309 /* AuthManager.swift */,
 				F86505CA2A31EA8D00F71743 /* ExerciseListViewModel.swift */,
 				F89E001B2A32041000FA4F5E /* FirestoreManager.swift */,
+				F8702C362A330CC300D33719 /* ExerciseViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -221,8 +230,11 @@
 				F86505CB2A31EA8D00F71743 /* ExerciseListViewModel.swift in Sources */,
 				F8D997C62A31CF7E0031B309 /* ExerciseListView.swift in Sources */,
 				F8D997E02A31D7450031B309 /* AuthManager.swift in Sources */,
+				F8702C332A33069900D33719 /* ExerciseView.swift in Sources */,
 				F89E001F2A32FF2500FA4F5E /* String+Extensions.swift in Sources */,
+				F8702C372A330CC300D33719 /* ExerciseViewModel.swift in Sources */,
 				F8D997DD2A31D5640031B309 /* LoginView.swift in Sources */,
+				F8702C352A330BA500D33719 /* Session.swift in Sources */,
 				F86505CE2A31F1EB00F71743 /* Exercise.swift in Sources */,
 				F89E001C2A32041000FA4F5E /* FirestoreManager.swift in Sources */,
 				F8D997C42A31CF7E0031B309 /* GymProgressApp.swift in Sources */,

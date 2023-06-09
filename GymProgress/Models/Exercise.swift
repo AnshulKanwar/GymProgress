@@ -10,4 +10,12 @@ import FirebaseFirestoreSwift
 
 struct Exercise: Codable, Identifiable {
     @DocumentID var id: String?
+    
+    var name: String {
+        id!.camelCaseToWords()
+    }
+}
+
+extension Exercise {
+    static let sampleExercise = Exercise(id: "Bench Press")
 }

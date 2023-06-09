@@ -11,8 +11,11 @@ struct ExerciseListView: View {
     @ObservedObject private var exerciseListViewModel = ExerciseListViewModel()
     
     var body: some View {
+        // TODO: Show another view in case of no exercises
         List(exerciseListViewModel.exercises) { exercise in
-            Text(exercise.id!.camelCaseToWords())
+            NavigationLink(exercise.name) {
+                ExerciseView(exercise: exercise)
+            }
         }
         .onAppear {
             exerciseListViewModel.getExercises()
