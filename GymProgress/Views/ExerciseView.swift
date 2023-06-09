@@ -11,6 +11,8 @@ struct ExerciseView: View {
     @ObservedObject var exerciseViewModel = ExerciseViewModel()
     let exercise: Exercise
     
+    @State private var isShowingNewSessionView = false
+    
     var body: some View {
         VStack(alignment: .leading) {
             List {
@@ -46,7 +48,7 @@ struct ExerciseView: View {
             
             Spacer()
             
-            Button(action: {}) {
+            Button(action: { isShowingNewSessionView = true }) {
                 Label {
                     Text("New Session")
                 } icon: {
@@ -56,6 +58,9 @@ struct ExerciseView: View {
                 }
             }
             .padding()
+        }
+        .sheet(isPresented: $isShowingNewSessionView) {
+            NewSessionView(exerciseId: exercise.id!)
         }
         .navigationTitle(exercise.name)
     }

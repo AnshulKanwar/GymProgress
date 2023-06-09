@@ -14,6 +14,8 @@
 		F8702C332A33069900D33719 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8702C322A33069900D33719 /* ExerciseView.swift */; };
 		F8702C352A330BA500D33719 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8702C342A330BA500D33719 /* Session.swift */; };
 		F8702C372A330CC300D33719 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8702C362A330CC300D33719 /* ExerciseViewModel.swift */; };
+		F88CF2462A332262000ABA2A /* NewSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88CF2452A332262000ABA2A /* NewSessionView.swift */; };
+		F88CF2482A3324BB000ABA2A /* NewSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88CF2472A3324BB000ABA2A /* NewSessionViewModel.swift */; };
 		F89E001C2A32041000FA4F5E /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E001B2A32041000FA4F5E /* FirestoreManager.swift */; };
 		F89E001F2A32FF2500FA4F5E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E001E2A32FF2500FA4F5E /* String+Extensions.swift */; };
 		F8D997C42A31CF7E0031B309 /* GymProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D997C32A31CF7E0031B309 /* GymProgressApp.swift */; };
@@ -34,6 +36,8 @@
 		F8702C322A33069900D33719 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		F8702C342A330BA500D33719 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		F8702C362A330CC300D33719 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
+		F88CF2452A332262000ABA2A /* NewSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionView.swift; sourceTree = "<group>"; };
+		F88CF2472A3324BB000ABA2A /* NewSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionViewModel.swift; sourceTree = "<group>"; };
 		F89E001B2A32041000FA4F5E /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		F89E001E2A32FF2500FA4F5E /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F8D997C02A31CF7E0031B309 /* GymProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +136,7 @@
 				F8D997DA2A31D1B10031B309 /* RegisterView.swift */,
 				F8D997DC2A31D5640031B309 /* LoginView.swift */,
 				F8702C322A33069900D33719 /* ExerciseView.swift */,
+				F88CF2452A332262000ABA2A /* NewSessionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				F86505CA2A31EA8D00F71743 /* ExerciseListViewModel.swift */,
 				F89E001B2A32041000FA4F5E /* FirestoreManager.swift */,
 				F8702C362A330CC300D33719 /* ExerciseViewModel.swift */,
+				F88CF2472A3324BB000ABA2A /* NewSessionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -234,9 +240,11 @@
 				F89E001F2A32FF2500FA4F5E /* String+Extensions.swift in Sources */,
 				F8702C372A330CC300D33719 /* ExerciseViewModel.swift in Sources */,
 				F8D997DD2A31D5640031B309 /* LoginView.swift in Sources */,
+				F88CF2462A332262000ABA2A /* NewSessionView.swift in Sources */,
 				F8702C352A330BA500D33719 /* Session.swift in Sources */,
 				F86505CE2A31F1EB00F71743 /* Exercise.swift in Sources */,
 				F89E001C2A32041000FA4F5E /* FirestoreManager.swift in Sources */,
+				F88CF2482A3324BB000ABA2A /* NewSessionViewModel.swift in Sources */,
 				F8D997C42A31CF7E0031B309 /* GymProgressApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

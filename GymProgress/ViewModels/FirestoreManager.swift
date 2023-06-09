@@ -40,4 +40,13 @@ class FirestoreManager {
     static func getSessions(exerciseId: String, completion: @escaping ([Session]) -> Void) {
         getDocuments(collectionPath: "users/\(authManager.uid)/exercises/\(exerciseId)/sessions", completion: completion)
     }
+    
+    static func addSession(exerciseId: String, session: Session) {
+        do {
+            try db.collection("users/\(authManager.uid)/exercises/\(exerciseId)/sessions").addDocument(from: session)
+        }
+        catch {
+            print(error.localizedDescription)
+        }
+    }
 }
