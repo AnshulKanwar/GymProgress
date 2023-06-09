@@ -20,7 +20,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct GymProgressApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
-    @StateObject var authManager = AuthManager()
+    @StateObject var authManager = AuthManager.shared
     
     var body: some Scene {
         WindowGroup {

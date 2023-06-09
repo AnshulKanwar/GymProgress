@@ -12,7 +12,7 @@ struct ExerciseListView: View {
     
     var body: some View {
         List(exerciseListViewModel.exercises) { exercise in
-            Text(exercise.name)
+            Text(exercise.id!.camelCaseToWords())
         }
         .onAppear {
             exerciseListViewModel.getExercises()

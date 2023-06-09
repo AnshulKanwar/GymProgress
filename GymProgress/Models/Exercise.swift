@@ -10,5 +10,4 @@ import FirebaseFirestoreSwift
 
 struct Exercise: Codable, Identifiable {
     @DocumentID var id: String?
-    let name: String
 }

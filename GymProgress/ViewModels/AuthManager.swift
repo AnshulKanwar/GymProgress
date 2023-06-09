@@ -10,6 +10,8 @@ import SwiftUI
 import FirebaseAuth
 
 class AuthManager: ObservableObject {
+    static let shared = AuthManager()
+    
     @AppStorage("uid") var uid: String = ""
     
     var isLoggedIn: Bool {
@@ -20,6 +22,7 @@ class AuthManager: ObservableObject {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let user = authResult?.user {
                 self.uid = user.uid
+                FirestoreManager.createUser(uid: user.uid)
             } else if let error = error {
                 print(error)
             }

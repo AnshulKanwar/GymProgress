@@ -21,6 +21,8 @@ struct RegisterView: View {
                 .font(.title)
                 .fontWeight(.bold)
             
+            Text(authManager.isLoggedIn.description)
+            
             Spacer()
             
             VStack {
